@@ -8,6 +8,7 @@ pipeline{
             steps{
                 echo "Building master"
             }
+        }
         stage("Builid Dev"){
             when{
                 branch 'dev'
@@ -16,6 +17,6 @@ pipeline{
                 echo "Building Dev"
             }
         }
-        }
-    }
+     }
 }
+
